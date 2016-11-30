@@ -32,7 +32,7 @@ mitcdh/yourls
 * `/scripts/Caddyfile`: base caddy file
 
 ### Exposed Ports
-* `2015`: http web server
+* `8015`: http web server
 
 ### Credits
 * [bios/docker-yourls](https://hub.docker.com/r/bios/docker-yourls/)
