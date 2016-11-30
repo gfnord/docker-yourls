@@ -8,14 +8,14 @@ YOURLS_USER=${YOURLS_PATH}/user
 
 # installation check
 echo "installing yourls"
-cp -rpf "${YOURLS_SRC}/." "${YOURLS_PATH}"
+cp -rpf "${YOURLS_SRC}/*" "${YOURLS_PATH}"
 
 # config check
 if [ -e "${YOURLS_USER}/${CONFIG}" ]; then
     echo "config check: existing config"
 else
     echo "config check: starting from dist"
-    cp -rpf "${YOURLS_USER}-dist/." "${YOURLS_USER}"
+    cp -rpf "${YOURLS_SRC}/user/*" "${YOURLS_USER}"
     if [ -z "$DB_USER" ]; then
         echo "no DB_USER found -> EXIT"
         exit 1

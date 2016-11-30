@@ -1,4 +1,4 @@
-FROM gfnord/docker-caddy-php
+FROM gfnord/caddy-php
 MAINTAINER Gustavo Nobrega <gustavofn@gmail.com>
 
 RUN apk --update add \
