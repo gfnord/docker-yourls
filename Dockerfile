@@ -9,4 +9,4 @@ VOLUME /www/public/user
 ADD files/yourls.sh /www/yourls.sh
 ADD files/Caddyfile /scripts/Caddyfile
 RUN chmod +x /www/yourls.sh 
-RUN chown -R web-srv:www-data /www/public
+RUN chown -R web-srv:www-data /www
