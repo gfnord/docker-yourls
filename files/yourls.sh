@@ -15,7 +15,7 @@ if [ -e "${YOURLS_USER}/${CONFIG}" ]; then
     echo "config check: existing config"
 else
     echo "config check: starting from dist"
-    cp -rpu "${YOURLS_USER}-dist/." "${YOURLS_USER}"
+    cp -rpf "${YOURLS_USER}-dist/." "${YOURLS_USER}"
     if [ -z "$DB_USER" ]; then
         echo "no DB_USER found -> EXIT"
         exit 1
