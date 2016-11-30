@@ -9,6 +9,7 @@ YOURLS_USER=${YOURLS_PATH}/user
 # installation check
 echo "installing yourls"
 chown -R web-srv:www-data /www 
+cp -rpf "${YOURLS_SRC}/*" "${YOURLS_PATH}"
 
 # config check
 if [ -e "${YOURLS_USER}/${CONFIG}" ]; then
